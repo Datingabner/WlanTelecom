@@ -62,7 +62,7 @@ const CoberturaMap = () => {
     <div className=" relative overflow-hidden bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="mt-30 max-w-4xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-green-400 sm:text-5xl mb-4">
+        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400 sm:text-5xl mb-4">
           Cobertura de Red
         </h1>
         <p className="text-xl text-gray-300">

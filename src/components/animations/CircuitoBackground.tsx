@@ -48,7 +48,7 @@ const CircuitBackground = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed -z-10 inset-0 overflow-hidden z-0 pointer-events-none"
+      className="fixed inset-0 overflow-hidden z-0 pointer-events-none"
       style={{
         background: "#000",
       }}
