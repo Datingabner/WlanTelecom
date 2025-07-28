@@ -1,24 +1,12 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { AdvancedMarker, Map, APIProvider } from '@vis.gl/react-google-maps';
 import AnimatedBackground from './animations/AnimatedBackground';
 
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
-
-  // Configuración del mapa
-  const mapContainerStyle = {
-    width: '100%',
-    height: '400px'
-  };
-
-  const center = {
-    lat: 19.2846852,  // Reemplaza con tu latitud
-    lng: -99.6388038  // Reemplaza con tu longitud
-  };
-
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -72,28 +60,8 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Columna izquierda - Mapa */}
           <div className="rounded-xl overflow-hidden shadow-2xl border border-gray-700/50 hover:border-cyan-400 transition duration-300">
-            <APIProvider
-              apiKey="AIzaSyBaH0hHZ_21bNqKKjQHMyswiF5i3kw8bxo"
-              libraries={['marker']}
-            >
-              <div style={mapContainerStyle}>
-                <Map
-                  defaultCenter={center}
-                  defaultZoom={15}
-                  mapId="a0bd2e6a5eef901b"
-                  gestureHandling={'greedy'}
-                  disableDefaultUI={false}
-                >
-                  <AdvancedMarker position={center}>
-                    <div className="relative">
-                      <div className="w-6 h-6 bg-cyan-500 rounded-full animate-pulse"></div>
-                      <div className="absolute -inset-2 border-2 border-cyan-400 rounded-full animate-ping opacity-75"></div>
-                    </div>
-                  </AdvancedMarker>
-                </Map>
-              </div>
-            </APIProvider>
-
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.13770819491194!2d-99.12844910310162!3d19.446798330719275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1753725038446!5m2!1ses!2smx" width="600" height="450" loading="lazy"></iframe>
             <div className="p-6 bg-gray-900/50 backdrop-blur-sm">
               <h3 className="text-2xl font-bold text-cyan-100 mb-4">Nuestra ubicación</h3>
               <p className="text-gray-300 mb-2">
