@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("./assets/Font/nidus_sans/stylesheet.css");
+@import "tailwindcss";
+@theme {
+    --font-Roboto: 'Roboto', 'san-serif';
+    /* --font-Elianto: 'Elianto', sans-serif; */
+    --font-Nidus_Sans: 'Nidus-Sans', nidus_sansregular;
+}

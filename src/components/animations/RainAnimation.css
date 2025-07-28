@@ -1,0 +1,12 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .particle {
+    animation: fall linear infinite;
+  }

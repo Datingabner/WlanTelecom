@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+}
+
+/* Header con scroll */
+header.header--scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Cuando el menú móvil está abierto */
+header.mobile-menu-open {
+  backdrop-filter: none !important;
+  /* Quita el blur del header */
+}
+
+nav.mobile-menu-open {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

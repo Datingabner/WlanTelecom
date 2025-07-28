@@ -1,0 +1,18 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .boton_customizado {
+    @apply relative inline-block text-white text-base px-[15px] py-[15px] bg-black border-2 border-[#93e0ff] rounded-[5px] shadow-[10px_10px_0px_0px_#9ff902] overflow-hidden group transform transition-all duration-200 ease-in-out hover:scale-95 hover:translate-y-1;
+  }
+
+  .boton_customizado span {
+    @apply relative z-10;
+  }
+
+  .boton_customizado::before {
+    @apply absolute inset-0 w-0 h-full bg-[#93e0ff] transition-all duration-300 ease-in-out group-hover:w-full;
+  }
+} */
