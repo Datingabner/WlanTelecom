@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollTop';
 function App() {
   return (
-    <Router basename='/wlantelecom'>
+    <Router >
       <ScrollToTop />
       <NavBar />
       <Routes>
